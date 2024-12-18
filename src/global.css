@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --corPrincipal: #c7ecee;
+    --corSecundaria: #222;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estiliza o input */
+input[type="text"] {
+    width: 300px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid var(--corSecundaria);
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Estilo ao focar no input */
+input[type="text"]:focus {
+    border-color: #007BFF; /* Azul primário */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Placeholder estilizado */
+input[type="text"]::placeholder {
+    color: #888;
+    font-style: italic;
+}
